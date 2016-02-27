@@ -6,13 +6,13 @@ Reference: http://www.datastax.com/dev/blog/accessing-cassandra-from-spark-in-ja
 ### Build
 ##### gradle clean build
 
-### Add dependencies in a lib folder
+### Add dependencies in a libs folder
 ##### gradle copyLibs
 
 ### Upload files to Spark server
 ##### create spark-cassandra-java/ directory in spark server
 mkdir spark-cassandra-java
-##### upload build/libs/spark-cassandra-java-1.0.jar and lib/*.jar to /sparkServer/spark-cassandra-java/
+##### upload build/libs/spark-cassandra-java-1.0.jar and libs/*.jar to /sparkServer/spark-cassandra-java/
 
 ### run spark-submit
 ##### go to spark-cassandra-java/ in spark server
