@@ -44,7 +44,7 @@ public class JavaDemo implements Serializable {
       session.execute("DROP KEYSPACE IF EXISTS java_api");
       session
           .execute("CREATE KEYSPACE java_api WITH replication = {'class': 'SimpleStrategy', 'replication_factor': 1}");
-      session.execute("CREATE TABLE java_api.products (id INT, name TEXT, age INT, PRIMARY KEY (age))");
+      session.execute("CREATE TABLE java_api.products (id INT, name TEXT, age INT, PRIMARY KEY (age, id))");
     }
     catch(Exception e) {
       e.printStackTrace();

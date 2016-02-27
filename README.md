@@ -19,8 +19,7 @@ mkdir spark-cassandra-java
 cd spark-cassandra-java
 ##### run spark-submit
 spark-submit --class dannyk.project.JavaDemo --jars $(echo ./*.jar | tr ' ' ',') \
---master yarn-client spark-cassandra-1.0.jar {spark master} {cassandra end point}
+--master {master} spark-cassandra-1.0.jar {spark master} {cassandra end point}
 
 
-spark-submit --class dannyk.project.JavaDemo --jars $(echo ./*.jar | tr ' ' ',') \
---master yarn-client spark-cassandra-1.0.jar yarn-client 192.168.99.100
+spark-submit --class dannyk.project.JavaDemo --jars $(echo ./*.jar | tr ' ' ',') --master local[4] spark-cassandra-1.0.jar local 192.168.99.100
