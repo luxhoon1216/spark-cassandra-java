@@ -62,7 +62,7 @@ public class JavaDemo implements Serializable {
     // Prepare the products hierarchy
     Random random = new Random();
     List<Product> products = new ArrayList<Product>();
-    for(int i = 1; i < 10000; i++) {
+    for(int i = 0; i < 10000; i++) {
     	Product p = new Product(i, i + "", random.nextInt(100));
     	products.add(p);
     }
