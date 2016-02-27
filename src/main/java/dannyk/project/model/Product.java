@@ -34,11 +34,11 @@ public class Product implements Serializable {
       this.name = name;
     }
 
-    public Integer getParents() {
+    public Integer getAge() {
       return age;
     }
 
-    public void setParents(Integer age) {
+    public void setAge(Integer age) {
       this.age = age;
     }
 
