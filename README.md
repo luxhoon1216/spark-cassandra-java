@@ -1,6 +1,6 @@
 # spark-cassandra-java
 
-Reference: https://gist.github.com/jacek-lewandowski/278bfc936ca990bee35a
+Reference: http://www.datastax.com/dev/blog/accessing-cassandra-from-spark-in-java
 
 
 ### Build
