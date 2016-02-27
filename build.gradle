@@ -39,6 +39,6 @@ uploadArchives {
 }
 
 task copyLibs(type: Copy) {
-	into "lib"
+	into "libs"
 	from configurations.compile
 }
