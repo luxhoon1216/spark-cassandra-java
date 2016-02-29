@@ -12,7 +12,7 @@ Reference: http://www.datastax.com/dev/blog/accessing-cassandra-from-spark-in-ja
 ### Upload files to Spark server
 ##### create spark-cassandra-java/ directory in spark server
 mkdir spark-cassandra-java
-##### upload build/libs/spark-cassandra-java-1.0.jar and libs/*.jar to /sparkServer/spark-cassandra-java/
+##### upload build/libs/spark-cassandra-java-0.0.1-SNAPSHOT.jar and libs/*.jar to /sparkServer/spark-cassandra-java/
 
 ### run spark-submit
 ##### go to spark-cassandra-java/ in spark server
@@ -22,4 +22,4 @@ spark-submit --class dannyk.project.JavaDemo --jars $(echo ./*.jar | tr ' ' ',')
 --master {master} spark-cassandra-1.0.jar {spark master} {cassandra end point}
 
 
-spark-submit --class dannyk.project.JavaDemo --jars $(echo ./*.jar | tr ' ' ',') --master local[4] spark-cassandra-1.0.jar local 192.168.99.100
+spark-submit --class dannyk.project.JavaDemo --jars $(echo ./*.jar | tr ' ' ',') --master local[4] spark-cassandra-java-0.0.1-SNAPSHOT.jar local 192.168.99.100
